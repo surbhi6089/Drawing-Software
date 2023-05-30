@@ -1,0 +1,12 @@
+C:\Users\surbh\source\repos\Assignments\Assignment1\Assignment1\Assignment1\Assignment1\bin\Debug\Assignment1.exe.config
+C:\Users\surbh\source\repos\Assignments\Assignment1\Assignment1\Assignment1\Assignment1\bin\Debug\Assignment1.exe
+C:\Users\surbh\source\repos\Assignments\Assignment1\Assignment1\Assignment1\Assignment1\bin\Debug\Assignment1.pdb
+C:\Users\surbh\source\repos\Assignments\Assignment1\Assignment1\Assignment1\Assignment1\obj\Debug\Assignment1.csproj.AssemblyReference.cache
+C:\Users\surbh\source\repos\Assignments\Assignment1\Assignment1\Assignment1\Assignment1\obj\Debug\Assignment1.csproj.SuggestedBindingRedirects.cache
+C:\Users\surbh\source\repos\Assignments\Assignment1\Assignment1\Assignment1\Assignment1\obj\Debug\Assignment1.Form1.resources
+C:\Users\surbh\source\repos\Assignments\Assignment1\Assignment1\Assignment1\Assignment1\obj\Debug\Assignment1.Properties.Resources.resources
+C:\Users\surbh\source\repos\Assignments\Assignment1\Assignment1\Assignment1\Assignment1\obj\Debug\Assignment1.csproj.GenerateResource.cache
+C:\Users\surbh\source\repos\Assignments\Assignment1\Assignment1\Assignment1\Assignment1\obj\Debug\Assignment1.csproj.CoreCompileInputs.cache
+C:\Users\surbh\source\repos\Assignments\Assignment1\Assignment1\Assignment1\Assignment1\obj\Debug\Assignment1.exe
+C:\Users\surbh\source\repos\Assignments\Assignment1\Assignment1\Assignment1\Assignment1\obj\Debug\Assignment1.pdb
+C:\Users\surbh\source\repos\Assignments\Assignment1\Assignment1\Assignment1\Assignment1\bin\Debug\Assignment1.xml

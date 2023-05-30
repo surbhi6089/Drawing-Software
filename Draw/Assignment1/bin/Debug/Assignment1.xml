@@ -1,0 +1,418 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Assignment1</name>
+    </assembly>
+    <members>
+        <member name="T:Assignment1.Circle">
+            <summary>
+            Child class circle which extends abstract class shapes
+            </summary>
+        </member>
+        <member name="M:Assignment1.Circle.#ctor">
+            <summary>
+            default constructor that inherits the base constructor
+            </summary>
+        </member>
+        <member name="M:Assignment1.Circle.#ctor(System.Drawing.Color,System.Boolean,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            parameterized constructor that inherits the base parameterized constructor
+            </summary>
+            <param name="colour"></param>
+            <param name="fillShape"></param>
+            <param name="x"></param>
+            <param name="y"></param>
+            <param name="radius"></param>
+        </member>
+        <member name="M:Assignment1.Circle.set(System.Drawing.Color,System.Boolean,System.Int32[])">
+            <summary>
+            method that overrides the parent method and sets the parameters for shape circle
+            </summary>
+            <param name="colour"></param>
+            <param name="fillShape"></param>
+            <param name="list"></param>
+        </member>
+        <member name="M:Assignment1.Circle.draw(System.Drawing.Graphics)">
+            <summary>
+            method that overrides parent method and creates circle with the properties set by "set" method
+            </summary>
+            <param name="g"></param>
+        </member>
+        <member name="T:Assignment1.DrawLine">
+            <summary>
+            class to set and draw line
+            it's parent class is abstract class Shapes
+            </summary>
+        </member>
+        <member name="M:Assignment1.DrawLine.#ctor">
+            <summary>
+            default constructor that inherits the base constructor
+            </summary>
+        </member>
+        <member name="M:Assignment1.DrawLine.#ctor(System.Drawing.Color,System.Boolean,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            parameterized constructor that inherits the base parametarized constructor
+            </summary>
+            <param name="colour"></param>
+            <param name="fillShape"></param>
+            <param name="x"></param>
+            <param name="y"></param>
+            <param name="x1"></param>
+            <param name="y1"></param>
+        </member>
+        <member name="M:Assignment1.DrawLine.set(System.Drawing.Color,System.Boolean,System.Int32[])">
+            <summary>
+            method to set the properties for drawing line
+            </summary>
+            <param name="colour"></param>
+            <param name="fillShape"></param>
+            <param name="list"></param>
+        </member>
+        <member name="M:Assignment1.DrawLine.draw(System.Drawing.Graphics)">
+            <summary>
+            method to draw line
+            </summary>
+            <param name="g"></param>
+        </member>
+        <member name="T:Assignment1.FillShapes">
+            <summary>
+            class to set the fill mode on or off
+            does not have a parent class
+            </summary>
+        </member>
+        <member name="M:Assignment1.FillShapes.fillColour(System.Boolean)">
+            <summary>
+            method to set the fill mode on or off
+            </summary>
+            <param name="fillShape"></param>
+        </member>
+        <member name="T:Assignment1.Form1">
+            <summary>
+            Partial class Form1
+            </summary>
+        </member>
+        <member name="F:Assignment1.Form1.factory">
+            <summary>
+            all the necessary variables declared and/or assigned 
+            </summary>
+        </member>
+        <member name="M:Assignment1.Form1.#ctor">
+            <summary>
+            default constructor
+            </summary>
+        </member>
+        <member name="M:Assignment1.Form1.flashColorThread">
+            <summary>
+            method to change color of shapes every half a second
+            does not take any parameters
+            </summary>
+        </member>
+        <member name="M:Assignment1.Form1.runProgram">
+            <summary>
+            method that checks what kind of command is given by the user and draws the shape
+            the type of command/value of main_command is assigned by the method passCommandType()
+            </summary>
+        </member>
+        <member name="M:Assignment1.Form1.passCommandType">
+            <summary>
+            method that passes user command and necessary parameter to the Validation class and gets the validated values passed from the Calidate method of Validation class
+            </summary>
+        </member>
+        <member name="M:Assignment1.Form1.Clear_Click(System.Object,System.EventArgs)">
+            <summary>
+            Clears the output window, error messages, empties necessary variables, methods and dictionaries and aborts the running threads
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Assignment1.Form1.drawingCommandGuideToolStripMenuItem_Click(System.Object,System.EventArgs)">
+            <summary>
+            when clicked by the user inside help menu it shows message containing guide to draw shape commands including command examples
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Assignment1.Form1.ifStatementGuideToolStripMenuItem_Click(System.Object,System.EventArgs)">
+            <summary>
+            when clicked by the user inside help menu it shows message containing guide to run if commands including command examples
+            has guide to run both single line if command and block if command
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Assignment1.Form1.loopCommandGuideToolStripMenuItem_Click(System.Object,System.EventArgs)">
+            <summary>
+            when clicked by the user inside help menu it shows message containing guide to run loop commands including command examples
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Assignment1.Form1.methodCOmmandGuideToolStripMenuItem_Click(System.Object,System.EventArgs)">
+            <summary>
+            when clicked by the user inside help menu it shows message containing guide to run method commands including command examples
+            has guide to run both method without parameter command and method with parameter command
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Assignment1.Form1.extraCommandsGuideToolStripMenuItem_Click(System.Object,System.EventArgs)">
+            <summary>
+            when clicked by the user inside help menu it shows message containing guide to run color changing commands,position changing commands, shape color fill commands and shape color flashing commands
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Assignment1.Form1.Run_Click(System.Object,System.EventArgs)">
+            <summary>
+            method that runs the program and either runs or clears or resets when typed into the execution window and run button is clicked
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Assignment1.Form1.saveToolStripMenuItem_Click_1(System.Object,System.EventArgs)">
+            <summary>
+            method that saves the commands typed by user in the command area and saves it as a text file in the chosen folder/location
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Assignment1.Form1.loadToolStripMenuItem_Click(System.Object,System.EventArgs)">
+            <summary>
+            method that loads an existing text file into the user command window/screen area
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Assignment1.Form1.Reset_Click(System.Object,System.EventArgs)">
+            <summary>
+            method that resets the position of cursor to it's initial position i.e. x-axis = 0 and y-axis = 0
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:Assignment1.Form1.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Assignment1.Form1.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Assignment1.Form1.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Assignment1.Move">
+            <summary>
+            class to set the position to move position
+            </summary>
+        </member>
+        <member name="M:Assignment1.Move.moveCursor(System.Int32,System.Int32)">
+            <summary>
+            method to set position x-axis and y-axis
+            </summary>
+            <param name="x"></param>
+            <param name="y"></param>
+        </member>
+        <member name="T:Assignment1.PenColor">
+            <summary>
+            class that sets the color of pen
+            does not extend or implement any other classes
+            </summary>
+        </member>
+        <member name="M:Assignment1.PenColor.SetColor(System.Drawing.Color)">
+            <summary>
+            method to set the color
+            </summary>
+            <param name="color"></param>
+        </member>
+        <member name="T:Assignment1.Program">
+            <summary>
+            Main Program
+            </summary>
+        </member>
+        <member name="M:Assignment1.Program.Main">
+            <summary>
+            The main entry point for the application.
+            </summary>
+        </member>
+        <member name="T:Assignment1.Rectangle">
+            <summary>
+            Class to set and draw rectangle shape
+            it's parent class is abstract class Shapes
+            </summary>
+        </member>
+        <member name="M:Assignment1.Rectangle.#ctor">
+            <summary>
+            default constructor that inherits the base constructor
+            </summary>
+        </member>
+        <member name="M:Assignment1.Rectangle.#ctor(System.Drawing.Color,System.Boolean,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            parameterized constructor that inherits the base parameterized constructor
+            </summary>
+            <param name="colour"></param>
+            <param name="fillShape"></param>
+            <param name="x"></param>
+            <param name="y"></param>
+            <param name="width"></param>
+            <param name="height"></param>
+        </member>
+        <member name="M:Assignment1.Rectangle.set(System.Drawing.Color,System.Boolean,System.Int32[])">
+            <summary>
+            method to set properties for shape rectangle
+            overrides parent method
+            </summary>
+            <param name="colour"></param>
+            <param name="fillShape"></param>
+            <param name="list"></param>
+        </member>
+        <member name="M:Assignment1.Rectangle.draw(System.Drawing.Graphics)">
+            <summary>
+            method to draw shape rectangle using properties set by the set method
+            overrides parent method
+            </summary>
+            <param name="g"></param>
+        </member>
+        <member name="T:Assignment1.ShapeFactory">
+            <summary>
+            class that implements factory design pattern
+            </summary>
+        </member>
+        <member name="M:Assignment1.ShapeFactory.GetShape(System.String)">
+            <summary>
+            method that gets the shape type from Form1
+            </summary>
+            <param name="shapeType"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Assignment1.I_ShapeInterface">
+            <summary>
+            This is an interface which is implemented by the abstract class Shapes
+            </summary>
+        </member>
+        <member name="M:Assignment1.I_ShapeInterface.set(System.Drawing.Color,System.Boolean,System.Int32[])">
+            <summary>
+            abstract method to set the properties of the shapes
+            </summary>
+            <param name="c"></param>
+            <param name="fillShape"></param>
+            <param name="list"></param>
+        </member>
+        <member name="M:Assignment1.I_ShapeInterface.draw(System.Drawing.Graphics)">
+            <summary>
+            abstract method to draw the shape 
+            </summary>
+            <param name="g"></param>
+        </member>
+        <member name="T:Assignment1.Shapes">
+            <summary>
+            Abstract class that implements interface I_ShapeInterface
+            </summary>
+        </member>
+        <member name="M:Assignment1.Shapes.#ctor">
+            <summary>
+            default constructor
+            </summary>
+        </member>
+        <member name="M:Assignment1.Shapes.#ctor(System.Drawing.Color,System.Boolean,System.Int32,System.Int32)">
+            <summary>
+            parameterized constructor
+            </summary>
+            <param name="colour"></param>
+            <param name="fillshape"></param>
+            <param name="x"></param>
+            <param name="y"></param>
+        </member>
+        <member name="M:Assignment1.Shapes.draw(System.Drawing.Graphics)">
+            <summary>
+            abstract method "draw" which can be overridden by it's child classes
+            </summary>
+            <param name="g"></param>
+        </member>
+        <member name="M:Assignment1.Shapes.set(System.Drawing.Color,System.Boolean,System.Int32[])">
+            <summary>
+            abstract method "set" which can be overridden by it's child classes
+            </summary>
+            <param name="colour"></param>
+            <param name="fillShape"></param>
+            <param name="list"></param>
+        </member>
+        <member name="T:Assignment1.Triangle">
+            <summary>
+            class to set and draw triangle
+            it's parent class is abstract class Shapes
+            </summary>
+        </member>
+        <member name="M:Assignment1.Triangle.#ctor(System.Drawing.Color,System.Boolean,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            parameterized constructor that inherits the base parameterized constructor
+            </summary>
+            <param name="colour"></param>
+            <param name="fillShape"></param>
+            <param name="x"></param>
+            <param name="y"></param>
+            <param name="x2"></param>
+            <param name="y2"></param>
+            <param name="x3"></param>
+            <param name="y3"></param>
+        </member>
+        <member name="M:Assignment1.Triangle.set(System.Drawing.Color,System.Boolean,System.Int32[])">
+            <summary>
+            method to set properties for triangle class
+            overrides parent method
+            </summary>
+            <param name="colour"></param>
+            <param name="fillShape"></param>
+            <param name="list"></param>
+        </member>
+        <member name="M:Assignment1.Triangle.draw(System.Drawing.Graphics)">
+            <summary>
+            method to draw triangle using properties set by the set method
+            overrides parent method
+            </summary>
+            <param name="g"></param>
+        </member>
+        <member name="T:Assignment1.Validation">
+            <summary>
+            Class to check and validate the command passed by the user
+            </summary>
+        </member>
+        <member name="P:Assignment1.Validation.GetInstance">
+            <summary>
+            method of return type Validation(class name) to return a single instance of the class
+            Singleton design pattern applied
+            </summary>
+        </member>
+        <member name="M:Assignment1.Validation.validate(System.String,System.Int32,System.Int32)">
+            <summary>
+            a method that takes 3 parameters: command given by the user and position of cursor(x-axis and y-axis)
+            </summary>
+            <param name="userInput"></param>
+            <param name="posX"></param>
+            <param name="posY"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Assignment1.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Assignment1.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Assignment1.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+    </members>
+</doc>
